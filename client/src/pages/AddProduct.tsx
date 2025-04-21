@@ -17,8 +17,8 @@ const AddProduct = () => {
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]); // Track selected products for bill
   const [editId, setEditId] = useState<string | null>(null); // To track which product is being edited
 
-  const productURL = 'http://localhost:5000/api/products';
-  const categoryURL = 'http://localhost:5000/api/categories';
+  const productURL = 'https://rog-qylu.onrender.com/api/products';
+  const categoryURL = 'https://rog-qylu.onrender.com/api/categories';
   const navigate = useNavigate();
 
   const fetchProducts = async () => {
